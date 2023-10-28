@@ -43,8 +43,8 @@ def custom_huffman_coding(n, array, m, custom_queries):
             bucket_frequencies[frequencies[value]] += 1
 
     
-
-    custom_queries_list = custom_queries.sort(key=lambda query: (query.left, query.right))
+    custom_queries_list = [CustomQuery(left - 1, right - 1, i) for i, (left, right) in enumerate(custom_queries)]
+    custom_queries_list.sort()
 
     left_index = 0
     right_index = -1
