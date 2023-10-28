@@ -30,4 +30,14 @@ def custom_huffman_coding(n, array, m, custom_queries):
         else:
             frequencies[value] -= 1
 
-   
+    def custom_add(value, frequencies, bucket_frequencies, geq_root):
+        if frequencies[value] >= SQRT:
+            frequencies[value] += 1
+        elif frequencies[value] == SQRT - 1:
+            bucket_frequencies[SQRT - 1] -= 1
+            frequencies[value] += 1
+            geq_root.add(value)
+        else:
+            bucket_frequencies[frequencies[value]] -= 1
+            frequencies[value] += 1
+            bucket_frequencies[frequencies[value]] += 1
