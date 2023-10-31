@@ -15,9 +15,8 @@ def interval_scheduling(lista_inicio, lista_fim):
 
 
 n_casos = int(input())
-i = 0
 
-while i <= n_casos+1:
+for i in range(0, n_casos):
     n_atividades = int(input())
 
     horario_inicio_tasks = []
@@ -31,4 +30,3 @@ while i <= n_casos+1:
 
     result = interval_scheduling(horario_inicio_tasks, horario_fim_tasks)
     print(len(result))
-    i += 1
