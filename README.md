@@ -21,6 +21,19 @@ O repositório contém soluções para algumas questões de juíz online. Segue 
 
 ## Screenshots
 
+- Huffman Coding on Segment
+
+![Huffman Coding on Segment](assets/huffman.jpeg)
+
+- Knapsack
+
+![Knapsack](assets/knapsack.jpeg)
+
+- BUSYMAN - I AM VERY BUSY 
+
+![BUSYMAN](assets/busyman.png)
+
+
 ## Instalação 
 Para executar as questões deste repositório, é necessário ter um interpretador python3.
 
@@ -36,6 +49,6 @@ Dessa forma, será possível testar a questão com os exemplos de entrada fornec
 
 ## Apresentação
 
-Assista o vídeo explicativo do projeto clicando.
+Assista o vídeo explicativo do projeto clicando [aqui](assets/apresentacao.mp4).
 
 Observação: A apresentação está em formato .mp4, portanto, faça o download para assisti-la.
